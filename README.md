@@ -1,37 +1,63 @@
-# Mall_Segmentation
-🧠 Machine Learning Models Collection
+# 🧠 Customer Segmentation using K-Means Clustering
 
-This repository contains a collection of machine learning models implemented using Jupyter Notebooks. Each notebook covers a different supervised or unsupervised learning algorithm applied to real-world or academic datasets.
-
+This project demonstrates how to apply *K-Means Clustering*, a popular unsupervised machine learning algorithm, to segment customers based on their behavior and demographic attributes. The goal is to identify distinct customer groups to support targeted marketing strategies and improve business decision-making.
 
 ---
 
-📁 Projects Included
+## 📁 Project Structure
 
-📊 Customer Segmentation – KMeans clustering for customer profiling.
-Mall Customer Segmentation Data https://share.google/qfMMhjwIX9euA8gyP
+- customer_segmentation.ipynb – Jupyter Notebook containing the full analysis, modeling, and visualizations.  
+- data.csv – Dataset used for clustering (Mall Customer Segmentation Data).  
+- requirements.txt – List of Python libraries required to run the project.
 
-🌾 Decision Tree (Crop Recommendation) – Classify crops based on environmental conditions.
-https://www.kaggle.com/datasets/varshitanalluri/crop-recommendation-dataset?utm_source=chatgpt.com
+---
 
-🌸 KNN (Iris Classification) – Classify iris species using k-nearest neighbors.
-Iris Species https://share.google/
-❤ Logistic Regression (Heart Disease Prediction) – Predict likelihood of heart disease.
-https://www.kaggle.com/datasets/oktayrdeki/heart-disease?utm_source=chatgpt.com
+## 🎯 Project Objective
 
+To group customers into meaningful segments based on features such as:
 
+- Age  
+- Annual Income (in $1000s)  
+- Spending Score (1–100)  
 
-🌲 Random Forest (Classification & Regression) – Advanced ensemble learning examples.
-KNN T shirt size 
-https://www.kaggle.com/datasets/omarmohammed271/t-shirts-sizes?utm_source=chatgpt.com
-https://www.kaggle.com/datasets/altruistdelhite04/gold-price-data?utm_source=chatgpt.com
+These clusters can be used to tailor marketing campaigns and enhance customer engagement.
 
-🏘 Real Estate Price Estimation – Predict housing prices using multiple linear regression.
-https://www.kaggle.com/datasets/uviiiii/real-estate?utm_source=chatgpt.com
+---
 
-✉ Spam Mail Detection (NLP) – Classify emails as spam or ham using NLP.
+## 📊 Dataset Information
 
-🧬 SVM (Diabetes Prediction) – Predict diabetes using support vector machines.
+*Source*: Mall Customer Segmentation Dataset (public domain)
 
-🔁 Customer Churn Prediction – Predict customer churn using Logistic Regression, Random Forest, and Artificial Neural Networks (ANN).
-https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling?utm_source=chatgpt.com 
+*Columns:*
+- CustomerID: Unique identifier for each customer  
+- Gender: Male or Female  
+- Age: Customer’s age  
+- Annual Income (k$): Income in thousands  
+- Spending Score (1–100): Score assigned by the mall based on spending patterns
+
+---
+
+## 🔧 Methodology
+
+1. *Data Loading & Preliminary Analysis*  
+2. *Preprocessing & Feature Selection*  
+3. *Finding the Optimal Number of Clusters* (Elbow Method)  
+4. *Model Training with K-Means*  
+5. *Cluster Analysis & Visualization*
+
+---
+
+## 📈 Key Visualizations
+
+- *Elbow Method Plot* – Helps determine the optimal number of clusters  
+- *2D Scatter Plots* – Visualize customer segments  
+- *Colored Cluster Mapping* – Clear interpretation of grouped behavior based on features like income and spending
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/customer-segmentation.git
+cd customer-segmentation
